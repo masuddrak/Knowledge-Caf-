@@ -1,0 +1,47 @@
+[
+    {
+      "id": 1,
+      "author_name": "Alice Johnson",
+      "release_date": "2024-03-13",
+      "read_time": 8,
+      "hashtag": "#programming",
+      "title": "Exploring Python Libraries for Data Analysis",
+      "img": "https://i.ibb.co/VvdyshY/istockphoto-1206796363-1024x1024.jpg"
+    },
+    {
+      "id": 2,
+      "author_name": "Bob Smith",
+      "release_date": "2024-03-14",
+      "read_time": 12,
+      "hashtag": "#machinelearning",
+      "title": "Introduction to Neural Networks",
+      "img": "https://i.ibb.co/FXhr18R/istockphoto-1484515563-1024x1024.jpg"
+    },
+    {
+      "id": 3,
+      "author_name": "Charlie Brown",
+      "release_date": "2024-03-15",
+      "read_time": 6,
+      "hashtag": "#webdevelopment",
+      "title": "Building Responsive Websites with Bootstrap",
+      "img": "https://i.ibb.co/SKQsMgj/istockphoto-1916667247-1024x1024.jpg"
+    },
+    {
+      "id": 4,
+      "author_name": "David Wilson",
+      "release_date": "2024-03-16",
+      "read_time": 10,
+      "hashtag": "#artificialintelligence",
+      "title": "Understanding Reinforcement Learning",
+      "img": "https://i.ibb.co/6tdmYjJ/istockphoto-1314937802-1024x1024.jpg"
+    },
+    {
+      "id": 5,
+      "author_name": "Emma Garcia",
+      "release_date": "2024-03-17",
+      "read_time": 7,
+      "hashtag": "#datascience",
+      "title": "Data Visualization Techniques with Matplotlib",
+      "img": "https://i.ibb.co/dQvsqS1/istockphoto-1836754176-1024x1024.jpg"
+    }
+  ]
