@@ -10,6 +10,7 @@ const Header = () => {
         const newReadMarkBook = [...readMarkBook, title]
         const alreadyExistTitel = readMarkBook.find(items => items == title)
         if (!alreadyExistTitel) {
+
             toast.success("Read Added")
             setReadMarkBook(newReadMarkBook)
         }
@@ -17,6 +18,8 @@ const Header = () => {
             toast.warn("already Exist ")
             // alert("already exist the element")
         }
+
+
     }
     // readin timme handel
     const [readTime, setReadTime] = useState(0)
@@ -30,9 +33,13 @@ const Header = () => {
         }
         setReadTime(readTime + time)
     }
+    // remove
 
-    const [hidenClass,setHidenClass]=useState('')
-
+    const reomoveElement = (mark) => {
+      console.log(mark)
+      const deletedItem = readMarkBook.filter(items => items != mark)
+      setReadMarkBook(deletedItem)
+    }
 
     return (
         <div >
@@ -44,7 +51,7 @@ const Header = () => {
             </div>
             <div className="md:max-w-[80%] p-4 mx-auto md:flex justify-between mt-5 gap-10">
                 <Blogs handelTitleBook={handelTitleBook} hadelReadingTime={hadelReadingTime}></Blogs>
-                <Bookmerks readMarkBook={readMarkBook} readTime={readTime} totalRead={totalRead} hidenClass={hidenClass}></Bookmerks>
+                <Bookmerks readMarkBook={readMarkBook} readTime={readTime} totalRead={totalRead} reomoveElement={reomoveElement} ></Bookmerks>
             </div>
         </div>
     );

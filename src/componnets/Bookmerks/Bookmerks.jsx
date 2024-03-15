@@ -1,7 +1,7 @@
 
 import AddBookMark from "../AddBookMark/AddBookMark";
 import PropTypes from 'prop-types';
-const Bookmerks = ({readMarkBook,readTime,totalRead,hidenClass}) => {
+const Bookmerks = ({readMarkBook,readTime,totalRead,reomoveElement}) => {
 
  
     return (
@@ -10,7 +10,12 @@ const Bookmerks = ({readMarkBook,readTime,totalRead,hidenClass}) => {
             <div className="bg-white text-black p-3 mt-5">
                 <h3 className="text-xl  p-2 rounded-md">Bookmarked Blogs : {readMarkBook.length}</h3>
                 {
-                    readMarkBook.map((mark,markID)=><AddBookMark key={markID}  mark={mark} hidenClass={hidenClass}></AddBookMark>)
+                    readMarkBook.map((mark,markID)=><AddBookMark key={markID}  mark={mark} reomoveElement={reomoveElement} readMarkBook={readMarkBook}></AddBookMark>)
+                    // readMarkBook.map((mark,markID)=><div key={markID}>
+                    //     <h1>{markID}</h1>
+                    //         <h2>{mark}</h2>
+                    //         <button onClick={()=>reomoveElement(mark)}>delet</button>
+                    // </div>)
                 }
                 <h3 className="text-xl  p-2 rounded-md">Total Reading :{totalRead}hr</h3>
             </div>
