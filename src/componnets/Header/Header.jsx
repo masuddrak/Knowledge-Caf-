@@ -36,7 +36,7 @@ const Header = () => {
     // remove
 
     const reomoveElement = (mark) => {
-      console.log(mark)
+        toast.success("Deleted Item ")
       const deletedItem = readMarkBook.filter(items => items != mark)
       setReadMarkBook(deletedItem)
     }
